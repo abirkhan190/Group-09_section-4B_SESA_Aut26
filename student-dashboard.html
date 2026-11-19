@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CampusCareer BD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        CampusCareer<span>BD</span>
+    </a>
+    <div class="nav-links">
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="jobs.html">Find Jobs</a>
+        <a href="profile.html">Profile</a>
+        <a href="cv-builder.html">My CV</a>
+    </div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</nav>
+<div class="dashboard">
+<div class="dashboard-header">
+    <div>
+        <h1 id="welcomeText">Welcome!</h1>
+        <p>Here is your career overview.</p>
+    </div>
+</div>
+<div id="profileCompleteness" class="completeness-card"></div>
+<div class="stats-container">
+<div class="stat-card">
+    <h3 id="appliedCount">0</h3>
+    <p>Jobs Applied</p>
+</div>
+<div class="stat-card">
+    <h3 id="shortlistedCount">0</h3>
+    <p>Shortlisted</p>
+</div>
+<div class="stat-card">
+    <h3 id="interviewCount">0</h3>
+    <p>Interview</p>
+</div>
+<div class="stat-card">
+    <h3 id="profileMatchAvg">--</h3>
+    <p>Avg. Profile Match</p>
+</div>
+</div>
+<div class="dashboard-section">
+<h2>Recommended Jobs</h2>
+<div class="job-list" id="recommendedJobs">
+    <p>Loading recommendations...</p>
+</div>
+</div>
+<div class="dashboard-section">
+<h2>My Applications</h2>
+<div id="applicationList">
+    <p>No applications yet.</p>
+</div>
+</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
