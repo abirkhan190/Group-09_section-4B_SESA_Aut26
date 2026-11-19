@@ -129,9 +129,3 @@ The database and all tables are **created automatically** on the first page load
 
 ---
 
-## Limitations
-
-- This is a **prototype**, not a hardened production system. The logged-in user session is kept in the browser.
-- SMS notifications are simulated (in-app alert only). No real SMS gateway is connected.
-- "Verification" is a manual admin toggle.
-- Requires PHP, so it **cannot be hosted on static hosting** such as Netlify or GitHub Pages.
